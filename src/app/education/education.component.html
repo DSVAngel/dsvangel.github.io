@@ -1,1 +1,21 @@
-<p>education works!</p>
+<div class="education-section">
+  <div class="section-title">Educación</div>
+
+  <div *ngFor="let edu of education" class="education-card">
+    <div class="edu-header">
+      <div class="edu-years">
+        {{ edu.startYear }} - {{ edu.endYear }}
+      </div>
+      <div class="edu-institution">
+        <b>{{ edu.institution }}</b>
+      </div>
+    </div>
+
+    <div class="edu-details">
+      <div class="edu-degree">{{ edu.degree }}</div>
+      <div class="edu-description" *ngIf="edu.description">
+        {{ edu.description }}
+      </div>
+    </div>
+  </div>
+</div>
