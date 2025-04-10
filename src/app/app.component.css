@@ -1,29 +1,31 @@
 body {
-  background-color: #f4f6f8;
+  background-color: #f0f2f5;
   margin: 0;
   padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
 }
 
 .cv-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  border: 1px solid #ccc;
-  border-radius: 12px;
+  gap: 16px;
   width: 100%;
-  max-width: 900px;
-  margin: 20px auto;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fdfdfd;
+  max-width: 1000px;
+  margin: 30px auto;
   padding: 24px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e0e0;
 }
 
 /* Header */
 app-header {
   grid-column: 1 / 3;
-  border-bottom: 2px solid #888;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #ccc;
 }
 
 /* Primera columna */
@@ -31,10 +33,11 @@ app-experience,
 app-education,
 app-languages {
   grid-column: 1 / 2;
-  padding: 16px;
-  border-right: 1px solid #ddd;
-  background-color: #fafafa;
-  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 /* Segunda columna */
@@ -42,26 +45,38 @@ app-skills,
 app-certificates,
 app-interests {
   grid-column: 2 / 3;
-  padding: 16px;
-  background-color: #fafafa;
-  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
-/* Estilo para todos los bloques */
+/* Comunes para todos los bloques */
 app-experience,
 app-skills,
 app-education,
 app-certificates,
 app-languages,
 app-interests {
-  border-bottom: none;
+  margin-bottom: 16px;
+}
+
+/* Título de secciones */
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2c3e50;
   margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #dcdcdc;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   .cv-container {
     grid-template-columns: 1fr;
+    padding: 16px;
   }
 
   app-header,
@@ -74,15 +89,9 @@ app-interests {
     grid-column: 1 / 2;
     border-right: none;
   }
+
   .section-title {
     font-size: 18px;
-    font-weight: 600;
-    color: #2c3e50;
-    margin-bottom: 8px;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 4px;
+    margin-bottom: 10px;
   }
 }
-
-
-

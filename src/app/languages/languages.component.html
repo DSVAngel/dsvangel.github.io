@@ -1,13 +1,18 @@
 <div class="languages-section">
   <div class="section-title">Idiomas</div>
 
-  <div *ngFor="let lang of languages" class="language-card">
-    <div class="lang-name">
-      {{ lang.name }}
-      <span *ngIf="lang.certified" class="lang-certified">✔️ Certificado</span>
+  <div *ngFor="let language of languages" class="language-card">
+    <div class="language-header">
+      <div class="language-name">
+        <b>{{ language.name }}</b>
+      </div>
+      <div class="language-proficiency">
+        Nivel: {{ language.proficiency }}
+      </div>
     </div>
-    <div class="lang-proficiency">
-      Nivel: <span>{{ lang.proficiency }}</span>
+
+    <div class="language-certified" *ngIf="language.certified">
+      Certificado: <span class="certified-label">Sí</span>
     </div>
   </div>
 </div>

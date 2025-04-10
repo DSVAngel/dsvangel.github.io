@@ -1,20 +1,23 @@
 <div class="education-section">
   <div class="section-title">Educación</div>
 
-  <div *ngFor="let edu of education" class="education-card">
-    <div class="edu-header">
-      <div class="edu-years">
-        {{ edu.startYear }} - {{ edu.endYear }}
+  <div *ngFor="let education of education" class="education-card">
+    <div class="education-header">
+      <div class="education-institution">
+        <b>{{ education.institution }}</b>
       </div>
-      <div class="edu-institution">
-        <b>{{ edu.institution }}</b>
+      <div class="education-degree">
+        {{ education.degree }}
       </div>
     </div>
 
-    <div class="edu-details">
-      <div class="edu-degree">{{ edu.degree }}</div>
-      <div class="edu-description" *ngIf="edu.description">
-        {{ edu.description }}
+    <div class="education-details">
+      <div class="education-year">
+        <span><b>Año de inicio:</b> {{ education.startYear }}</span><br />
+        <span><b>Año de finalización:</b> {{ education.endYear }}</span>
+      </div>
+      <div class="education-description" *ngIf="education.description">
+        <span><b>Descripción:</b> {{ education.description }}</span>
       </div>
     </div>
   </div>

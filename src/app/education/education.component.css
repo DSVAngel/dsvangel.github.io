@@ -1,45 +1,52 @@
 .education-section {
-  padding: 10px 0;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .education-card {
-  background-color: #fdfdfd;
-  padding: 12px;
+  background-color: #fff;
   border-radius: 8px;
-  margin-bottom: 12px;
-  border: 1px solid #e0e0e0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.edu-header {
+.education-header {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
-.edu-institution {
+.education-institution {
+  font-size: 18px;
   font-weight: bold;
-  color: #2c3e50;
+  color: #4CAF50;
 }
 
-.edu-degree {
-  font-size: 15px;
-  color: #333;
-  margin-bottom: 4px;
+.education-degree {
+  font-size: 16px;
+  color: #888;
 }
 
-.edu-description {
+.education-details {
+  margin-top: 10px;
+}
+
+.education-year {
   font-size: 14px;
   color: #555;
-  line-height: 1.4;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  .edu-header {
-    flex-direction: column;
-    gap: 4px;
-  }
+.education-description {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
 }
