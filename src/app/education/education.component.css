@@ -1,0 +1,45 @@
+.education-section {
+  padding: 10px 0;
+}
+
+.education-card {
+  background-color: #fdfdfd;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.edu-institution {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.edu-degree {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.edu-description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .edu-header {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
