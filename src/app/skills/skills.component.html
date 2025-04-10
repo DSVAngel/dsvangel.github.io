@@ -1,4 +1,21 @@
-<p>skills works!</p>
-<p>
-  {{skillsService.accesSkills}}
-</p>
+<div class="skills-section">
+  <div class="section-title">Habilidades</div>
+
+  <div *ngFor="let skill of skills" class="skill-card">
+    <div class="skill-header">
+      <div class="skill-category">
+        <b>{{ skill.category }}</b>
+      </div>
+      <div class="skill-level">
+        Nivel: {{ skill.level }}
+      </div>
+    </div>
+
+    <div class="skill-details">
+      <div class="skill-name">{{ skill.name }}</div>
+      <div class="skill-experience">
+        Años de experiencia: {{ skill.yearsofExperience }}
+      </div>
+    </div>
+  </div>
+</div>

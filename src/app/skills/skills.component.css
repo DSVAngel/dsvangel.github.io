@@ -1,0 +1,51 @@
+.skills-section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.skill-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.skill-category {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.skill-level {
+  font-size: 16px;
+  color: #888;
+}
+
+.skill-details {
+  margin-top: 10px;
+}
+
+.skill-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.skill-experience {
+  font-size: 16px;
+  color: #555;
+}
