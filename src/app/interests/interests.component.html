@@ -1,18 +1,13 @@
 <div class="interests-section">
   <div class="section-title">Intereses</div>
 
-  <div *ngFor="let interest of interests" class="interest-card">
-    <div class="interest-header">
-      <div class="interest-name">
-        <b>{{ interest.name }}</b>
+  <div class="interests-list">
+    <div *ngFor="let interest of interests" class="interest-card">
+      <div class="interest-name"><b>{{ interest.name }}</b></div>
+      <div class="interest-meta">
+        <span *ngIf="interest.level">Nivel: {{ interest.level }}</span>
+        <span *ngIf="interest.startYear"> • Desde {{ interest.startYear }}</span>
       </div>
-      <div class="interest-level">
-        Nivel: {{ interest.level }}
-      </div>
-    </div>
-
-    <div class="interest-details">
-      <span><b>Desde:</b> {{ interest.startYear }}</span>
     </div>
   </div>
 </div>

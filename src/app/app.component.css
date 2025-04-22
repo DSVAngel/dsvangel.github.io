@@ -28,31 +28,6 @@ app-header {
   border-bottom: 2px solid #ccc;
 }
 
-/* Primera columna */
-app-experience,
-app-education,
-app-languages {
-  grid-column: 1 / 2;
-  padding: 20px;
-  background-color: #f9fafb;
-  border-radius: 12px;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-}
-
-/* Segunda columna */
-app-skills,
-app-certificates,
-app-interests {
-  grid-column: 2 / 3;
-  padding: 20px;
-  background-color: #f9fafb;
-  border-radius: 12px;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-}
-
-/* Comunes para todos los bloques */
 app-experience,
 app-skills,
 app-education,

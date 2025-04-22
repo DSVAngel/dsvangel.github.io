@@ -1,52 +1,24 @@
 .education-section {
-  margin: 20px;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-}
-
-.section-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .education-card {
   background-color: #fff;
+  border-left: 4px solid #c8102e;
+  padding: 1rem;
+  margin-bottom: 1rem;
   border-radius: 8px;
-  padding: 15px;
-  margin-bottom: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .education-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
 }
 
-.education-institution {
-  font-size: 18px;
-  font-weight: bold;
-  color: #4CAF50;
-}
-
-.education-degree {
-  font-size: 16px;
-  color: #888;
-}
-
-.education-details {
-  margin-top: 10px;
-}
-
-.education-year {
-  font-size: 14px;
-  color: #555;
-}
-
-.education-description {
-  font-size: 14px;
-  color: #555;
-  margin-top: 10px;
+.education-school {
+  font-style: italic;
+  color: #666;
 }

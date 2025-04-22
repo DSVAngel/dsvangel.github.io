@@ -1,42 +1,28 @@
 .interests-section {
-  margin: 20px;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
+  margin-bottom: 2rem;
 }
 
-.section-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
+.interests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .interest-card {
   background-color: #fff;
+  border-left: 4px solid #c8102e;
+  padding: 0.75rem 1rem;
   border-radius: 8px;
-  padding: 15px;
-  margin-bottom: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.interest-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .interest-name {
-  font-size: 18px;
-  font-weight: bold;
-  color: #4CAF50;
+  font-size: 1.05rem;
+  color: #222;
 }
 
-.interest-level {
-  font-size: 16px;
-  color: #888;
-}
-
-.interest-details {
-  font-size: 14px;
+.interest-meta {
   color: #555;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
 }

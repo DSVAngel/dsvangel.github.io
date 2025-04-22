@@ -6,8 +6,7 @@ firebase: {
   projectId: "dsvangel-cv",
   storageBucket: "dsvangel-cv.firebasestorage.app",
   messagingSenderId: "89051442429",
-  appId: "1:89051442429:web:6d3f165e36f98fd3282294",
-  measurementId: "G-WGB6MHCGSM"
-
+  appId: "1:89051442429:web:525153eda95d63a9282294",
+  measurementId: "G-S0TTC90R93"
 }
 };
