@@ -16,6 +16,10 @@
         <span><b>Fecha de emisión:</b> {{ certificate.issueDate }}</span><br />
         <span><b>Fecha de expiración:</b> {{ certificate.expirationDate || 'No expiración' }}</span>
       </div>
+      <div class="certificate-link" *ngIf="certificate.imageUrl">
+      <b>URL: </b>
+      <a [href]="certificate.imageUrl" target="_blank">{{ certificate.imageUrl }}</a>
+    </div>
     </div>
   </div>
 </div>
